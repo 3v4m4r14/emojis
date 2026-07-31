@@ -210,6 +210,7 @@ This README was generated using `./generate-readme.sh`.
 | <img src='./emojis/panda//PandaPeeking1.gif' width='96'> | PandaPeeking1.gif |
 | <img src='./emojis/panda//PandaPeeking2.gif' width='96'> | PandaPeeking2.gif |
 | <img src='./emojis/panda//PandaPeeking3.gif' width='96'> | PandaPeeking3.gif |
+| <img src='./emojis/panda//PandaPetThePanda.webp' width='96'> | PandaPetThePanda.webp |
 | <img src='./emojis/panda//PandaPig.webp' width='96'> | PandaPig.webp |
 | <img src='./emojis/panda//PandaPika.webp' width='96'> | PandaPika.webp |
 | <img src='./emojis/panda//PandaPing.webp' width='96'> | PandaPing.webp |
@@ -339,5 +340,4 @@ This README was generated using `./generate-readme.sh`.
 | <img src='./emojis/panda//PandaYoshi.webp' width='96'> | PandaYoshi.webp |
 | <img src='./emojis/panda//PandaYou.webp' width='96'> | PandaYou.webp |
 | <img src='./emojis/panda//Pandayummy.webp' width='96'> | Pandayummy.webp |
-| <img src='./emojis/panda//PetThePanda.webp' width='96'> | PetThePanda.webp |
 
