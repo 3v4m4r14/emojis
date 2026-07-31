@@ -11,7 +11,7 @@ FILECOUNT=$(find ./emojis -type f \
 
 echo "# Emoji Collection" >> "$README"
 echo "" >> "$README"
-echo "A collection of emojis for easy future access." >> "$README"
+echo "A collection of emojis for easy access in the future ." >> "$README"
 echo "" >> "$README"
 echo "**$FILECOUNT emojis**" >> "$README"
 echo "" >> "$README"
@@ -30,22 +30,17 @@ for theme in ./emojis/*/; do
   echo "| Emoji preview | Emoji name |" >> "$README"
   echo "| --- | --- |" >> "$README"
 
-  for filename in "$theme"*; do
+  # Find images and sort them alphabetically
+  find "$theme" -maxdepth 1 -type f \
+    \( -iname "*.webp" -o -iname "*.gif" -o -iname "*.png" -o -iname "*.jpg" -o -iname "*.jpeg" \) \
+    | sort -f \
+    | while IFS= read -r filename; do
 
-    # Only process image files
-    case "$filename" in
-      *.webp|*.WEBP|*.gif|*.GIF|*.png|*.PNG|*.jpg|*.JPG|*.jpeg|*.JPEG)
-        ;;
-      *)
-        continue
-        ;;
-    esac
+      name=$(basename "$filename")
 
-    name=$(basename "$filename")
+      echo "| <img src='$filename' width='96'> | $name |" >> "$README"
 
-    echo "| <img src='$filename' width='96'> | $name |" >> "$README"
-
-  done
+    done
 
   echo "" >> "$README"
 
